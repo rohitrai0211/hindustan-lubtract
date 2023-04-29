@@ -1,0 +1,240 @@
+.headertop3 nav .links li .sub-menu {
+    position: absolute;
+    top: 64px;
+    line-height: 40px;
+    background: #3E8DA8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+    width: max-content;
+    margin-bottom: 20px;
+    left: unset;
+    height: fit-content;
+    margin-left: 20px;
+    transition: 2s easein;
+    transition: all 0.3s ease;
+    transition: all .2s ease-in-out;
+}
+
+
+
+nav .links li .fa-angle-double-down {
+    transition: all 0.3s ease;
+    width: 0px;
+    float: right;
+    cursor: pointer;
+}
+
+.headertop3 .headertop2 nav .links li:hover .htmlCss-sub-menu {
+    display: block;
+    transition: opacity .4s ease, visibility .4s ease;
+}
+
+.links li .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.links li .sub-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    width: 70%;
+    text-transform: uppercase;
+
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav a#logo {
+    display: none;
+}
+
+nav ul a {
+    color: var(--basecolor5);
+    font-weight: 500;
+    border-left: 2px solid var(--basecolor4);
+    padding-left: 15px;
+}
+
+nav ul a:hover {
+    border-left: 2px solid var(--primarycolor3);
+    color: var(--primarycolor3);
+}
+
+nav ul a.active {
+    border-left: 2px solid var(--primarycolor3);
+    color: var(--primarycolor3);
+}
+
+section#home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#ham-menu {
+    display: none;
+}
+
+nav ul.active {
+    left: 0;
+}
+
+.sub-menu li a {
+    background-color: var(--primarycolor3);
+    color: var(--basecolor1);
+    border-right: none;
+    border-bottom: 2px solid var(--secondrycolor3);
+    padding: 10px;
+    width: 150px;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+
+
+}
+
+.links li .sub-menu li {
+    padding: 0px;
+
+}
+
+.sub-menu li a:hover {
+    background-color: var(--primarycolor2);
+
+}
+
+.active1 {
+    background-color: var(--primarycolor2) !important;
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    nav {
+        width: 120%;
+    }
+
+    nav ul a {
+    
+        padding-left: 10px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+
+}
+
+
+/* for mobiles */
+
+@media screen and (max-width: 480px) {
+    nav .links li .fa-angle-double-down {
+        transition: all 0.3s ease;
+        display: unset;
+        font-size: 16px;
+        margin-left: 5px;
+        float: unset;
+    }
+
+    nav ul {
+        background-color: var(--basecolor1);
+        position: fixed;
+        right: -100vw;
+        top: 96.4px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        transition: 1s;
+        gap: 30px;
+        padding: 20px;
+        height: 100%;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    #ham-menu {
+        display: block;
+        color: var(--secondrycolor3);
+        font-size: 3.2rem;
+        cursor: pointer
+    }
+
+    .headertop3 nav .links li .sub-menu {
+        position: relative;
+        top: 20px;
+        line-height: 40px;
+        background: none;
+        box-shadow: none;
+        border-radius: 0 0 4px 4px;
+        display: none;
+        z-index: 2;
+        width: max-content;
+        margin-bottom: 20px;
+        left: 0;
+        height: fit-content;
+        margin-left: 20px;
+        transition: 2s easein;
+        transition: all 0.3s ease;
+        padding: 0px;
+    }
+
+
+
+    .sub-menu li a {
+        background-color: var(--primarycolor3);
+        color: var(--basecolor1);
+        border-right: none;
+        border-bottom: 2px solid var(--secondrycolor3);
+        padding: 10px;
+        width: 150px;
+        width: 100%;
+        display: block;
+        max-width: 100%;
+
+
+    }
+
+    .links li .sub-menu li {
+        padding: 0px;
+
+    }
+
+    .sub-menu li a:hover {
+        background-color: var(--primarycolor2);
+
+    }
+
+    .active1 {
+        background-color: var(--primarycolor2) !important;
+
+    }
+
+
+
+
+}
